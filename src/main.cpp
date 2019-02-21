@@ -281,7 +281,7 @@ int main() {
             {
               for(int i =0; i < sensor_fusion.size(); i++)
               {
-                //car is in my lane 
+                //car in adjacent lane space check 
                 float right_d = sensor_fusion[i][6];
                 if(lane<2 &&(right_d< (2+4*(lane+1)+2) && right_d > (2+4*(lane+1)-2)))
                 {
